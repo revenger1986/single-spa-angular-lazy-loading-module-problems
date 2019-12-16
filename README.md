@@ -1,7 +1,7 @@
 # Coexisting Angular Microfrontends lazy loading problem
 Single-spa lazy loading problem repro project.
 
-#How to reproduce
+# How to reproduce
 1. build all subapps and host them in IIS (or something else) IN PRODUCTION MODE.
    Default urls used are: localhost:5200, 5201, 5202 and 5203.
 2. Run the shell and see 'Hello i am test.component from app1', navigate to app2.
