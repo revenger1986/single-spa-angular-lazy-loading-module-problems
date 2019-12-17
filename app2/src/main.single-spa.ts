@@ -1,6 +1,7 @@
+import { setPublicPath } from 'systemjs-webpack-interop';
+setPublicPath('app2');
 
 import { enableProdMode, NgZone } from '@angular/core';
-
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { Router } from '@angular/router';
 import { AppModule } from './app/app.module';
@@ -19,7 +20,7 @@ const lifecycles = singleSpaAngular({
   },
   template: '<app2-root />',
   Router,
-  NgZone: NgZone,
+  NgZone,
 });
 
 export const bootstrap = lifecycles.bootstrap;
